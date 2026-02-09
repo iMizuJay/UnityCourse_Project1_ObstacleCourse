@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 177929004}
   - component: {fileID: 177929003}
   - component: {fileID: 177929002}
+  - component: {fileID: 177929006}
   m_Layer: 0
   m_Name: Wall 2
   m_TagString: Untagged
@@ -231,6 +232,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177929006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177929001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +426,7 @@ GameObject:
   - component: {fileID: 373972643}
   - component: {fileID: 373972642}
   - component: {fileID: 373972641}
+  - component: {fileID: 373972645}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -513,6 +527,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 17.97, z: 0}
+--- !u!114 &373972645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373972640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1 &405465582
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,8 +551,9 @@ GameObject:
   - component: {fileID: 405465585}
   - component: {fileID: 405465584}
   - component: {fileID: 405465583}
-  - component: {fileID: 405465587}
   - component: {fileID: 405465588}
+  - component: {fileID: 405465587}
+  - component: {fileID: 405465589}
   m_Layer: 0
   m_Name: Dodge Man The Player
   m_TagString: Untagged
@@ -667,6 +694,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &405465589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405465582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc35d1580e8563145b7a965df11dc488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Scorer
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,13 +797,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.7178362, y: -0.17317973, z: 0.19234358, w: 0.6463157}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 96.002014, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,6 +894,7 @@ GameObject:
   - component: {fileID: 912912148}
   - component: {fileID: 912912147}
   - component: {fileID: 912912146}
+  - component: {fileID: 912912150}
   m_Layer: 0
   m_Name: Wall 3
   m_TagString: Untagged
@@ -955,6 +995,143 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &912912150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912912145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
+--- !u!1 &1094759896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094759897}
+  - component: {fileID: 1094759901}
+  - component: {fileID: 1094759900}
+  - component: {fileID: 1094759899}
+  - component: {fileID: 1094759898}
+  m_Layer: 0
+  m_Name: Dropping Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094759897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094759896}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.15617539, z: -0, w: 0.9877294}
+  m_LocalPosition: {x: -4.55, y: 7.93, z: 9.08}
+  m_LocalScale: {x: 2.3347, y: 1.2723415, z: 2.3347}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1375216426}
+  m_LocalEulerAnglesHint: {x: 0, y: 17.97, z: 0}
+--- !u!114 &1094759898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094759896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
+--- !u!65 &1094759899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094759896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1094759900
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094759896}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9c79fff96e201f343a4ac0f468fffeb5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1094759901
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094759896}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1107062221
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +1144,7 @@ GameObject:
   - component: {fileID: 1107062224}
   - component: {fileID: 1107062223}
   - component: {fileID: 1107062222}
+  - component: {fileID: 1107062226}
   m_Layer: 0
   m_Name: Wall 4
   m_TagString: Untagged
@@ -1067,6 +1245,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1107062226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107062221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1 &1265919514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1269,7 @@ GameObject:
   - component: {fileID: 1265919517}
   - component: {fileID: 1265919516}
   - component: {fileID: 1265919515}
+  - component: {fileID: 1265919519}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Untagged
@@ -1179,6 +1370,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 17.97, z: 0}
+--- !u!114 &1265919519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265919514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1 &1375216425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 373972644}
+  - {fileID: 1094759897}
   - {fileID: 1265919518}
   - {fileID: 2113448322}
   - {fileID: 1673891812}
@@ -1342,6 +1546,7 @@ GameObject:
   - component: {fileID: 1673891811}
   - component: {fileID: 1673891810}
   - component: {fileID: 1673891809}
+  - component: {fileID: 1673891813}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -1442,6 +1647,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673891813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673891808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1 &2052699240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1780,7 @@ GameObject:
   - component: {fileID: 2113448321}
   - component: {fileID: 2113448320}
   - component: {fileID: 2113448319}
+  - component: {fileID: 2113448323}
   m_Layer: 0
   m_Name: Obstacle 3
   m_TagString: Untagged
@@ -1663,6 +1881,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375216426}
   m_LocalEulerAnglesHint: {x: 18.648, y: -6.358, z: 0}
+--- !u!114 &2113448323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113448318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd372d33b2c5c348965a7af5474e246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
