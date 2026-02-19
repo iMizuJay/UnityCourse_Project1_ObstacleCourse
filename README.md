@@ -9,4 +9,4 @@ This project is part of a Unity 6 Udemy course.
 - Basic game logic
 
 ## Status
-Incomplete
+Complete
